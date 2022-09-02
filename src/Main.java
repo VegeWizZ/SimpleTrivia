@@ -16,7 +16,7 @@ public class Main {
         String Question1 = ("Who is the trivia creator");
         String Options1 = (" A) Pedro  B) Vege  C) Pedro");
         String Sol1 = ("B)");
-        String Fail1 = ("A)" + "C)");
+
 
         System.out.println(Question1);
         System.out.println(Options1);
@@ -26,7 +26,8 @@ public class Main {
         if (Answer.equals(Sol1)) {
             points++;
             System.out.println("Congrats");
-        } else if (Answer.equals(Fail1)) {
+        } else {
+            points--;
             System.out.println("Oh.. You fail, the answer was the B) Vege");
 
         }
@@ -34,7 +35,7 @@ public class Main {
         String Question2 = ("What is 5+9");
         String Options2 = (" A) 10  B) 15 C) 14 ");
         String Sol2 = ("C)");
-        String Fail2 = ("A)" + "B)");
+
 
         System.out.println(Question2);
         System.out.println(Options2);
@@ -44,7 +45,8 @@ public class Main {
         if (answer2.equals(Sol2)) {
             points++;
             System.out.print("Congrats");
-        } else if (answer2.equals(Fail2)) {
+        } else {
+            points--;
             System.out.println("Oh.. You fail, the answer was the C) 14");
 
         }
@@ -52,7 +54,7 @@ public class Main {
         String Question3 = ("In what country is Madrid");
         String Options3 = ("A) Spain B) Italy C) USA");
         String Sol3 = ("A)");
-        String Fail3 = ("B)" + "C)");
+
 
         System.out.println(Question3);
         System.out.println(Options3);
@@ -62,7 +64,8 @@ public class Main {
         if (answer3.equals(Sol3)) {
             points++;
             System.out.print("Congrats");
-        } else if (answer3.equals(Fail3)) {
+        } else  {
+            points--;
             System.out.println("Oh.. You fail, the answer was the A) Spain");
 
         }
